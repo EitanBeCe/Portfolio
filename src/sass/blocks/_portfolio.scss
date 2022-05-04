@@ -1,0 +1,28 @@
+.portfolio {
+    padding-top: 120px;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(auto-fit, 280px) / repeat(auto-fit, 280px);
+        gap: 5px;
+        .vertical {
+            grid-row: 1 / 3;
+            grid-column: 4 / 5;
+        }
+        .horizonal {
+            grid-column: 2 / 4;
+        }
+    }
+    &__item {
+        transition: all .5s;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &:hover {
+            transform: scale(105%);
+            filter: hue-rotate(170deg);
+        }
+    }
+}

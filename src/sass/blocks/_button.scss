@@ -3,6 +3,7 @@
     padding: 12px 45px;
     background: $main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border: none;
     &:hover {
         box-shadow: 0px 0px 15px $main-color;
         transition: 0.6s all;
@@ -11,5 +12,6 @@
         background:rgba(0, 0, 0, 0.05);
         transition: 0.4s all;
         text-shadow: 0 0 6px $main-color;
+        outline: none;
     }
 }
