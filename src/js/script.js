@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close');
+      closeElem = document.querySelector('.menu__close'),
       closeElem2 = document.querySelector('.menu__overlay');
       
 

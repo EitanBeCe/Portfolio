@@ -1,7 +1,10 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url(../img/main_bg.jpg) no-repeat 54%/cover;
+    // background: url(../img/main_bg.jpg) no-repeat 54%/cover;
+    background: url(../img/Eitan10.jpg) no-repeat 54%/cover;
+    background-attachment: fixed;
+    background-position-y: -500px;
     padding-top: 30vh;
     &__title {
         width: 535px;
