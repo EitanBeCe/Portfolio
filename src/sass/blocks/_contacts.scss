@@ -35,6 +35,9 @@
             height: 30px;
             width: 30px;
         }
+        &-github img {
+            transform: rotate(90deg);
+        }
     }
     &__form {
         margin-top: 30px;
