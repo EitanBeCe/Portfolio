@@ -3,7 +3,7 @@
     &__wrapper {
         display: grid;
         grid-template-rows: minmax(200px, auto) minmax(200px, auto);
-        grid-template-columns: 400px 570px;
+        grid-template-columns: 400px 620px;
         grid-auto-rows: minmax(245px, auto);
         grid-auto-flow: row;
         row-gap: 40px;
@@ -39,9 +39,13 @@
     &__skills {
         display: grid;
         column-gap: 50px;
-        row-gap: 20px;
-        grid-template: repeat(auto-fit, minmax(115px, auto)) / repeat(auto-fit, minmax(auto, 260px));
+        row-gap: 25px;
+        grid-template: repeat(auto-fit, minmax(50px, auto)) / repeat(
+                auto-fit,
+                minmax(auto, 260px)
+            );
         grid-auto-rows: 1fr;
+        // justify-content: space-between;
         &-text {
             margin-top: 6px;
             font-size: 12px;
