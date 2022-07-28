@@ -6,8 +6,12 @@
     left: 50px;
     flex-direction: column;
     justify-content: space-between;
-    height: 340px;
+    height: 300px;
     align-items: center;
+    &__link-linkedin img {
+        transform: rotate(-90deg);
+        height: 20px;
+    }
     &__divider {
         width: 2px;
         height: 70px;
