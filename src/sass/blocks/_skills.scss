@@ -6,7 +6,7 @@
         grid-template-columns: repeat(auto-fit, 270px);
         grid-template-rows: repeat(auto-fit, minmax(270px, auto));
         grid-gap: 13px;
-        // justify-content: space-around;
+        justify-content: space-around;
     }
     &__item {
         border: 2px solid #000;

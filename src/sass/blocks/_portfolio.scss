@@ -11,6 +11,7 @@
         }
         .horizonal {
             grid-column: 2 / 4;
+            // grid-row: 1 / 2;
         }
     }
     &__item {
@@ -22,7 +23,7 @@
         }
         &:hover {
             transform: scale(107%) rotate(1deg);
-            filter: hue-rotate(70deg);
+            filter: hue-rotate(270deg) saturate(200%); //blur(1px)
         }
     }
 }
