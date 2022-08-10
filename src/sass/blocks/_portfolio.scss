@@ -1,29 +1,95 @@
 .portfolio {
-    padding-top: 120px;
-    &__wrapper {
-        margin-top: 60px;
-        display: grid;
-        grid-template: repeat(auto-fit, 280px) / repeat(auto-fit, 280px);
-        gap: 5px;
-        .vertical {
-            grid-row: 1 / 3;
-            grid-column: 4 / 5;
-        }
-        .horizonal {
-            grid-column: 2 / 4;
-            // grid-row: 1 / 2;
-        }
+  padding-top: 120px;
+  position: relative;
+  &__wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template: repeat(auto-fit, 280px) / repeat(auto-fit, 280px);
+    gap: 5px;
+    .vertical {
+      grid-row: 1 / 3;
+      grid-column: 4 / 5;
     }
-    &__item {
-        transition: all .5s;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        &:hover {
-            transform: scale(107%) rotate(1deg);
-            filter: hue-rotate(270deg) saturate(200%); //blur(1px)
-        }
+    .horizonal {
+      grid-column: 2 / 4;
+      // grid-row: 1 / 2;
     }
+  }
+  &__item {
+    transition: all 0.5s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    // &:hover {
+    //   transform: scale(107%) rotate(1deg);
+    //   filter: hue-rotate(270deg) saturate(200%); //blur(1px)
+    // }
+  }
+  &__card {
+    position: relative;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // width: 360px;
+    // height: 400px;
+    background: #000;
+  }
+  &__card &__image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  &__card &__image img {
+    width: 100%;
+    transition: 0.5s;
+  }
+  &__card:hover &__image img {
+    opacity: 0.5;
+    transform: translateX(35%); /*100%*/
+  }
+  &__card &__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%; /*100%*/
+    height: 100%;
+    background: $main-color;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+  }
+  &__card:hover &__details {
+    transform: perspective(2000px) rotateY(0deg);
+  }
+  &__card &__details &__center {
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__card &__details &__center h3 {
+    margin: 0;
+    padding: 0;
+    color: $main-color;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  //   &__card &__details &__center h3 span {
+  //     font-size: 14px;
+  //     color: #262626;
+  //   }
+  &__card &__details &__center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+    font-size: 15px;
+  }
+  //   .card .details .center ul li a:hover {
+  //     background: #ff3636;
+  //   }
 }
