@@ -12,7 +12,7 @@
     }
     .horizontal {
       grid-column: 2 / 4;
-      // grid-row: 1 / 2;
+      grid-row: 1 / 2;
     }
   }
   &__item {
@@ -21,6 +21,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 10px;
     }
     // &:hover {
     //   transform: scale(107%) rotate(1deg);
@@ -32,7 +33,7 @@
     }
     .horizontal {
       grid-column: 2 / 4;
-      // grid-row: 1 / 2;
+      grid-row: 1 / 2;
     }
   }
   &__card {
@@ -42,7 +43,7 @@
     // transform: translate(-50%, -50%);
     // width: 360px;
     // height: 400px;
-    background: #000;
+    // background: #000;
   }
   &__card &__image {
     width: 100%;
